@@ -41,8 +41,7 @@ size_t partition(std::vector<int>& a, size_t low, size_t high)
 void quicksort_sequential(std::vector<int>& a, const size_t low,
     const size_t high)
 {
-    const auto n = high - low + 1;
-    if (n == 1) {
+    if (high == low) {
         return;
     }
     const auto median_index = median_of_three(a, low, high);
