@@ -1,9 +1,9 @@
 CXX := g++
 CXXFLAGS := -std=c++17 -Wall -Wextra -Wpedantic -O2 -ggdb3
 
-qs: qs.cpp
-	$(CXX) $(CXXFLAGS) qs.cpp -o qs
+serial_quicksort: src/serial_quicksort.cpp
+	$(CXX) $(CXXFLAGS) $^ -o $@
 
 clean:
-	rm -f qs
+	rm -f serial_quicksort
 
